@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import bb8 from './favicon.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        AI like bb8
+      </h1>
+         <img src={bb8} alt='bb8'/>
+      <form>
+        <h4>Feed some text to bb8</h4>
+        <textarea name='text' ></textarea>
+        <input type='submit' value='Submit'></input>
+      </form>
     </div>
   );
 }
